@@ -1,0 +1,733 @@
+// COLOUR VARIABLES
+$bg-grey: #2A2A2A;
+$bg-light-grey: #F4F4F4;
+$med-grey: #F5F5F5;
+$light-grey: #8C8C8C;
+$drk-grey: #464646;
+$drkest-grey: #454545;
+$white-grey: #F6F6F6;
+$blk-grey: #232323;
+$contact-grey: #5F5F5F;
+$red: #FE6467;
+$green: #66a992;
+
+// SET UP STYLES
+body {
+	margin: 0;
+	font-family: 'Lato', 'Helvetica', sans-serif;
+	font-size: 12px;
+	color: white;
+	line-height: 16px;
+    letter-spacing: 0.1rem;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+section {
+	padding: 2% 10%;
+}
+
+h1, ul.nav, 
+.intro-info-wrap span,
+.intro-info-wrap h1,
+span.services {
+	text-transform: uppercase;
+}
+
+.sec-title {
+	margin: 0 auto;
+	text-align: center;
+	padding: 4% 0 6% 0;
+
+	h1 {
+		color: black;
+	}
+	span.highlight {
+		color: $red;
+	}
+	
+}
+
+.underline {
+	width: 3%;
+    height: 1px;
+    background: black;
+    margin: 0 auto;
+}
+
+// MENU STYLES
+section.menu {
+	background: $bg-grey;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	.menu-inner {
+		margin: 0 auto;
+		float: right;
+	}
+	img#logo {
+		padding-left: 5%;
+	}
+
+}
+
+ul.nav {
+	float: right;
+    list-style: none;
+    text-align: center;
+    color: white;
+    margin: 0;
+	li {
+		display:block;
+	   float:left;
+	   margin: 10px;
+	}
+	
+}
+// END OF MENU STYLES
+
+// INTRO STYLES
+section.intro {
+	background: url('../assets/header-herobg.jpg') no-repeat;
+	font-size: 16px;
+}
+
+.intro-info-wrap {
+	float: right;
+    text-align: left;
+    padding-top: 15%;
+}
+
+.intro-info {
+	float: right;
+}
+
+#yoga-girl {
+	width: 100%;
+	margin-bottom: -25%;
+	margin-top: 15%;
+}
+// END OF INTRO STYLES
+
+// SERVICES STYLES
+section.services {
+	background: $bg-light-grey;
+	margin-top: 3%;
+	color: $light-grey;
+
+	span.services {
+		color: black;
+	}
+
+	i {
+		display: inline;
+	}
+	i.icon {
+		font-size: 1.5rem;
+		padding-bottom: 5px;
+		display: block;
+	}
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+	}
+	i, span.read-more {
+		color: $red;
+	}
+}
+
+.balance, .strong, .challenge {
+		float: left;
+		text-align: center;
+	}
+// END OF SERVICES STYLES 
+
+// TRAINER STYLES
+section.trainers {
+
+
+	.fourth {
+		padding: 0;
+		margin: 0;
+
+			img {
+				width: 100%;
+				display: inline-flex;
+			}
+	}
+	.grid {
+		margin: 0;
+	}
+	.desk--one-quarter {
+		width: 20%;
+		margin: 0 2%
+	}
+	.pic-info {
+		background: $bg-light-grey;
+		color: $light-grey;
+		padding-bottom: 5%;
+
+			h2 {
+				color: black;
+				padding: 5%;
+			}
+
+			h2, h3 {
+				font-weight: normal;
+				text-transform: capitalize;
+				text-align: center;
+				margin: 0;
+				font-size: 100%;
+			}
+			h3 {
+				font-size: 12px;
+				padding-bottom: 5%;
+			}
+			.underline {
+				width: 10%;
+			}
+
+	}// end of .fourth
+}// end of section.trainers
+// END OF TRAINER STYLES
+
+// QUOTE STYLES
+section.quote {
+	background: url('../assets/testimonial-bg.jpg') no-repeat center;
+	margin: 0 auto;
+
+		.quote-inner {
+			text-align: center;
+			padding: 12% 0;
+
+			h1 {
+				text-transform: uppercase;
+				font-size: 300%;
+				font-weight: normal;
+				line-height: 30px;
+
+			}
+			p,
+			span.country {
+				font-style: italic;
+			}
+			span.name,
+			span.country {
+				font-weight: bold;
+				font-size: 85%;
+				display: block;
+			}
+			span.name {
+				color: $red;
+			}
+			span.country {
+				color: $light-grey;
+			}
+		}
+}
+// END OF QUOTE STYLES
+
+// BLOG STYLES
+.blog-wrap {
+
+		.desk--one-third {
+			width: 30.33%;
+		}
+
+		.blog {
+			padding: 0;
+			overflow: hidden;
+			margin: 1%;
+		}
+		
+		#first-pic,
+		#second-pic,
+		#third-pic {
+			position: relative;
+			height: 272px;
+		}
+
+		#first-pic {
+			background: url('../assets/blog-01.jpg') no-repeat center;
+
+		}
+
+		#second-pic {
+			background: url('../assets/blog-02.jpg') no-repeat center;
+		}
+
+		#third-pic {
+			background: url('../assets/blog-03.jpg') no-repeat center;
+		}
+
+		#icon {
+			position: absolute;
+		    bottom: 4.5%;
+		    margin: 0;
+		    padding: 0;
+		    width: 20%;
+		}
+}
+// end of .blog-wrap
+section.blog {
+
+	.blog-details {
+		width: 32.33%;
+		color: $light-grey;
+		padding: 1%;
+
+			h2 {
+				color: black;
+				font-weight: normal;
+			}
+			span.date {
+				font-style: italic;
+				font-size: 80%;
+			}
+			p {
+				padding: 4% 0;
+			}
+			ul.services {
+				margin: 0;
+				padding: 0;
+
+				li {
+					float: left;
+					list-style-type: none;
+					padding-right: 3%;
+					font-size: 95%;
+					i {
+						color: black;
+					} 
+				}
+			}
+	}
+}
+// END OF BLOG STYLES
+
+// PACKAGE STYLES
+section.package {
+	background: $bg-light-grey;
+	text-align: center;
+
+		.choose-pkg {
+			color: $drk-grey;
+			text-align: center;
+			padding: 4% 0;
+
+			h1 {
+				font-weight: normal;
+			}
+		}
+	.desk--one-quarter {
+		width: 24%;
+	}
+
+	span {
+		display: block;
+	}
+
+	span.title {
+		font-size: 70%;
+		text-transform: capitalize;
+	}	
+	span.member {
+		font-size: 90%;
+		text-transform: uppercase;
+	}
+
+	.member {
+		padding: 5% 0;
+
+	}
+	.chevron {
+		position: relative;
+	}
+
+	.price {
+		background: $white-grey;
+		color: $drkest-grey;
+		font-weight: bold;
+		font-size: 175%;
+		padding: 5% 0;
+	} 
+	
+	#student {
+		background: $light-grey;
+	}
+	#pro {
+		background: $drk-grey;
+	}
+	#unlimited {
+		background: $red;
+	}
+	#premium {
+		background: $drkest-grey;
+	}
+
+	.terms {
+		background: white;
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			display: block;
+			border-bottom: 1px solid $bg-light-grey;
+			color: $drkest-grey;
+			padding: 6% 8%;
+		}
+	}
+	
+	button {
+		display: block;
+		width: 100%;
+		text-align: center;
+		border: none;
+		text-transform: uppercase;
+		height: 40px;
+		color: white;
+	}
+	button#student {
+		background: $light-grey;
+	}
+	button#pro {
+		background: $drk-grey;
+	}
+	button#unlimited {
+		background: $red;
+	}
+	button#premium {
+		background: $drkest-grey;
+	}
+
+}
+// END OF PACKAGE STYLES
+
+// START OF SIGN UP STYLES
+section.sign-up {
+	text-align: center;
+	background: url("../assets/header-herobg.jpg") no-repeat center;
+	color: white;
+	padding: 5%;
+
+		span {
+			font-size: 80%;
+		}
+		p {
+			font-size: 140%;
+		}
+		button {
+			background: $drkest-grey;
+			padding: 1% 3%;
+			border: none;
+			color: white;
+			text-transform: uppercase;
+			margin-top: 1%;
+		}
+}
+// END OF SIGN UP STYLES
+
+// START OF CONTACT STYLES
+section.contact {
+	background: $bg-grey;
+	color: $contact-grey;
+	letter-spacing: 0.1rem;
+
+		.desk--one-quarter {
+			width: 24%;
+		}
+		.underline {
+			background: $bg-light-grey;
+			margin: 0;
+			width: 10%;
+			margin-bottom: 10%;
+		}
+		h1 {
+			text-transform: capitalize;
+			font-size: 100%;
+			letter-spacing: 0.1rem;
+			margin: 10% 0 4%;
+			color: white;
+		}
+		li {
+			list-style-type: none;
+			padding: 5% 0;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		input,
+		textarea, {
+			border: 1.5px solid $bg-light-grey;
+			margin: 3% 0;
+			background: transparent;
+			color: $bg-light-grey;
+			letter-spacing: 0.05rem;
+			font-size: 70%;
+		}
+		input {
+			padding: 3% 40% 3% 3%;
+		}
+		textarea {
+			padding: 3% 36% 40% 3%;
+		}
+}
+
+// ADDRESS COL STYLES
+.address {
+
+	img {
+		width: 80%;
+	}
+	i {
+		margin: 2% 5%;
+		float: left;
+	}
+	ul.address {
+		margin-bottom: 10%;
+	}
+}
+// END OF ADDRESS STYLES
+
+// TWITTER COL STYLES
+.twitter {
+
+	li {
+		
+		i {
+			font-size: 150%;
+		}
+	}
+	span.handle {
+		color: $red;
+	}
+}
+// END OF TWITTER STYLES
+
+// START OF LINK STYLES
+.link {
+
+	ul.link {
+
+		li {
+			list-style-type: disc;
+			border-bottom: 2px dotted;
+			text-transform: capitalize;
+		}
+	}
+}
+// END OF LINK STYLES
+
+// START OF FORM STYLES
+.form {
+	
+	button.send {
+		background: $red;
+		color: white;
+		border: none;
+		padding: 3% 15%;
+		letter-spacing: 0.05rem;
+	}
+}
+// END OF FORM STYLES
+// END OF CONTACT STYLES
+
+// START OF FOOTER STYLES
+footer {
+	background: $blk-grey;
+	color: $contact-grey;
+	text-align: center;
+	padding: 2.5% 0;
+
+	a {
+		color: $contact-grey;
+		font-weight: normal;
+		text-decoration: none;
+	}
+}
+
+// HAMBURGER NAV STYLES & MEDIA QUERIES
+/*----- Toggle Button -----*/
+.toggle-nav {
+    display:none;
+}
+nav.menu {
+	text-align: right;
+	width: auto;
+	display: inline-block;
+} 
+#img-wrap {
+	margin: 1% 0;
+	padding-left: 20px;
+}
+/*----- Menu -----*/
+@media screen and (min-width: 860px) {
+    .menu {
+        width:100%;
+        padding:10px 18px;
+        border-radius:3px;
+		
+    }
+
+    
+}
+.menu ul {
+    display:inline-block;
+}
+ 
+.menu li {
+    margin:0px 50px 0px 0px;
+    float:left;
+    list-style:none;
+    font-size:14px;
+}
+ 
+.menu li:last-child {
+    margin-right:0px;
+}
+ 
+.menu a {
+    text-transform: uppercase;
+    transition:color linear 0.15s;
+    color: white;
+    font-weight: normal;
+
+    i {
+    	color: white;
+    }
+}
+ 
+.menu a:hover, .menu .current-item a {
+    text-decoration:none;
+}
+.menu a:hover {
+	border-bottom: 1px solid $green;
+} 
+.menu a:active {
+	color: $green;
+} 
+
+/*----- Responsive -----*/
+@media screen and (max-width: 1150px) {
+    .wrap {
+        width:90%;
+    }
+}
+ 
+@media screen and (max-width: 970px) {
+    .search-form input {
+        width:120px;
+    }
+}
+ 
+@media screen and (max-width: 860px) {
+	section.menu {
+		width: 100%;
+
+		#img-wrap > img#logo {
+			padding: 0;
+		}
+	}
+	
+
+
+    .menu {
+        position:relative;
+        display:inline-block;
+    }
+ 
+    .menu ul.active {
+        display:none;
+        background: black;
+    }
+ 
+    .menu ul {
+        position:absolute;
+        top: 80%;
+        left: -10px;
+        padding:15px 18px;
+        border-radius:3px;
+        background: $bg-grey;
+    }
+ 
+    .menu ul:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        left:20px;
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #303030;
+    }
+ 
+    .menu li {
+        margin:5px 0px 5px 0px;
+        display:block;
+        padding: 2% 0;
+    }
+ 
+    .menu a {
+        display:block;
+        color: white;
+        font-weight: bold;
+    }
+ 
+    .toggle-nav {
+        padding:10px;
+        float:left;
+        display:inline-block;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+        text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+        color:#777;
+        font-size:20px;
+        transition:color linear 0.15s;
+        margin: 50% 25% 0 25%;
+    }
+ 
+    .toggle-nav:hover, .toggle-nav.active {
+        text-decoration:none;
+        border-bottom: 2px solid black;
+    }
+
+    img#yoga-girl {
+    	display: none;
+    }
+
+    section.intro {
+    	height: 150px;
+    	padding-bottom: 8%;
+    	.intro-info-wrap {
+    		padding: 0 0 20% 30%;
+    		margin: 0 auto;
+    		margin-top: 5%;
+    	}
+    }
+
+	section.menu {
+		position: inherit;
+	}
+ 
+}
+
+@media screen and (max-width: 650px) {
+	
+	
+}
+
