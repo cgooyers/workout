@@ -7,8 +7,7 @@ body {
   letter-spacing: 0.1rem; }
 
 a {
-  text-decoration: none;
-  color: white; }
+  text-decoration: none; }
 
 .clearfix {
   overflow: auto; }
@@ -38,7 +37,10 @@ span.services {
   margin: 0 auto; }
 
 section.menu {
-  background: #2A2A2A; }
+  background: #2A2A2A;
+  position: fixed;
+  top: 0;
+  width: 100%; }
   section.menu .menu-inner {
     margin: 0 auto;
     float: right; }
@@ -70,7 +72,8 @@ section.intro {
 
 #yoga-girl {
   width: 100%;
-  margin-bottom: -25%; }
+  margin-bottom: -25%;
+  margin-top: 20%; }
 
 section.services {
   background: #F4F4F4;
@@ -369,7 +372,7 @@ nav.menu {
   width: auto;
   display: inline-block; }
 
-.img-wrap {
+#img-wrap {
   margin: 1% 0;
   padding-left: 20px; }
 
@@ -401,7 +404,12 @@ nav.menu {
     color: white; }
 
 .menu a:hover, .menu .current-item a {
-  text-decoration: none;
+  text-decoration: none; }
+
+.menu a:hover {
+  border-bottom: 1px solid #66a992; }
+
+.menu a:active {
   color: #66a992; }
 
 /*----- Responsive -----*/
@@ -416,7 +424,7 @@ nav.menu {
 @media screen and (max-width: 860px) {
   section.menu {
     width: 100%; }
-    section.menu .img-wrap > img#logo {
+    section.menu #img-wrap > img#logo {
       padding: 0; }
   .menu {
     position: relative;
@@ -429,7 +437,8 @@ nav.menu {
     top: 80%;
     left: -10px;
     padding: 15px 18px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    background: #2A2A2A; }
   .menu ul:after {
     width: 0px;
     height: 0px;
@@ -446,8 +455,9 @@ nav.menu {
     padding: 2% 0; }
   .menu a {
     display: block;
-    color: #2A2A2A;
     font-weight: bold; }
+  a:hover {
+    border-bottom: 1px solid #66a992; }
   .toggle-nav {
     padding: 10px;
     float: left;
@@ -471,4 +481,6 @@ nav.menu {
     section.intro .intro-info-wrap {
       padding: 0 0 20% 30%;
       margin: 0 auto;
-      margin-top: 5%; } }
+      margin-top: 5%; }
+  section.menu {
+    position: inherit; } }
